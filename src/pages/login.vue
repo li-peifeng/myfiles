@@ -6,9 +6,9 @@
 			</div>
 			<div class="w-full lg:w-1/2 xl:w-1/2 mt-10 p-6 sm:p-12">
 				<div class="mt-0 flex flex-col items-center">
-					<h1 class="text-2xl mt-0 xl:text-3xl font-extrabold box animate__animated animate__fadeInDown">
+                                   <h1 class="text-2xl mt-0 xl:text-3xl font-extrabold box animate__animated animate__fadeInDown">
 						<img class="w-16 cursor-pointer"
-						     @click="openLink('https://github.com/zhaojun1998/zfile')"
+						     @click="openLink('/')"
 						     src="../assets/icons/zfile-basic.svg" />
 					</h1>
 					<div class="w-full flex-1">
@@ -18,22 +18,22 @@
                 <div class="w-full border-t text-gray-600" />
               </div>
               <div class="relative flex justify-center text-sm">
-                <span class="px-2 bg-white text-sm leading-none text-gray-600 tracking-wide font-medium">管理员登录</span>
+                <span class="px-2 bg-white text-sm leading-none text-gray-600 tracking-wide font-medium">亲爱的，你回来啦！</span>
               </div>
             </div>
 
             <el-form @submit.native.prevent ref="loginFormRef" :rules="formRules" :model="formData"
 						        class="zfile-login-form" size="large">
 							<el-form-item class="box animate__animated animate__fadeInUp" prop="username">
-								<el-input placeholder="管理员账号" :prefix-icon="User" v-model.trim="formData.username"/>
+								<el-input placeholder="输入账号吧" :prefix-icon="User" v-model.trim="formData.username"/>
 							</el-form-item>
 
 							<el-form-item class="box animate__animated animate__fadeInUp" prop="password">
-								<el-input placeholder="管理员密码" type="password" show-password :prefix-icon="Key" v-model.trim="formData.password"/>
+								<el-input placeholder="还有密码哦" type="password" show-password :prefix-icon="Key" v-model.trim="formData.password"/>
 							</el-form-item>
 
 							<el-form-item v-if="loginVerifyMode === '2fa'" class="box animate__animated animate__fadeInUp" prop="verifyCode">
-								<el-input placeholder="双因素认证验证码" :prefix-icon="Check" v-model.trim="formData.verifyCode"/>
+								<el-input placeholder="神秘口令" :prefix-icon="Check" v-model.trim="formData.verifyCode"/>
 							</el-form-item>
 
 							<el-form-item v-else-if="loginVerifyMode === 'image'" class="box animate__animated animate__fadeInUp" prop="verifyCode">
@@ -43,18 +43,8 @@
 								</div>
 							</el-form-item>
 
-							<el-form-item class="box animate__animated animate__fadeInUp float-right">
-								<el-tooltip class="item" effect="dark" placement="left">
-									<template #content>
-										将配置文件 application.properties 中 zfile.debug 修改为 true, 重启后访问首页即可重置密码 <br>
-										<a target="_blank" class="text-blue-400" href="https://docs.zfile.vip/question#reset-pwd">点击可前往文档查看操作方式</a>
-									</template>
-									<el-link :icon="QuestionFilled" :underline="false" class="zfile-float-right">忘记密码</el-link>
-								</el-tooltip>
-							</el-form-item>
-
 							<el-form-item class="clear-right">
-								<el-button :loading="loading" class="w-full mb-0" native-type="submit" type="primary" :icon="CheckBadgeIcon" @click="submitForm">登录</el-button>
+								<el-button :loading="loading" class="w-full mb-0" native-type="submit" type="primary" :icon="CheckBadgeIcon" @click="submitForm">进来吧！</el-button>
 							</el-form-item>
 						</el-form>
 					</div>
