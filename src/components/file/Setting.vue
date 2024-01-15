@@ -43,7 +43,7 @@
 						<el-input-number v-model="zfileSettingCache.gallery.rowSpacing" :min="0"></el-input-number>
 					</div>
 					<div class="flex justify-between">
-						<div class="text-lg font-medium">图片是否带圆角边框</div>
+						<div class="text-lg font-medium">图片圆角</div>
 						<el-switch v-model="zfileSettingCache.gallery.roundedBorder"></el-switch>
 					</div>
 					<div class="flex justify-between">
@@ -51,25 +51,25 @@
 						<el-switch v-model="zfileSettingCache.gallery.showInfo"></el-switch>
 					</div>
 					<div class="flex justify-between">
-						<div class="text-lg font-medium">名称显示模式</div>
+						<div class="text-lg font-medium">名称显示</div>
 						<el-select class="w-[150px]" v-model="zfileSettingCache.gallery.showInfoMode">
 							<el-option label="悬浮显示" value="hover"></el-option>
 							<el-option label="底部显示" value="bottom"></el-option>
 						</el-select>
 					</div>
 					<div class="flex justify-between">
-						<div class="text-lg font-medium">双击预览模式</div>
+						<div class="text-lg font-medium">双击预览</div>
 						<el-select class="w-[150px]" v-model="zfileSettingCache.imagePreview.mode">
 							<el-option label="显示全部" value="full"></el-option>
 							<el-option label="显示单张" value="only"></el-option>
 						</el-select>
 					</div>
           <div class="flex justify-between">
-            <div class="text-lg font-medium">点击放大预览</div>
+            <div class="text-lg font-medium">点击预览</div>
             <el-switch v-model="zfileSettingCache.imagePreview.gallery"></el-switch>
           </div>
           <div class="flex justify-between">
-            <div class="text-lg font-medium">回到顶部按钮</div>
+            <div class="text-lg font-medium">回到顶部</div>
             <el-switch v-model="zfileSettingCache.gallery.showBackTop"></el-switch>
           </div>
 				</div>
