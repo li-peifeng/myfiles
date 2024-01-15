@@ -22,7 +22,7 @@
         id="ListTable"
         ref="fileTableRef"
         v-loading="basicLoading"
-        element-loading-text="拼命加载中"
+        element-loading-text="不要着急哦..."
         element-loading-background="rgba(255, 255, 255, 0.6)"
         @sort-change="sortChangeMethod"
         @row-click="tableClickRow"
@@ -39,7 +39,7 @@
         <template #empty>
           <div v-show="!basicLoading">
             <svg-icon class="empty-icon" name="empty"/>
-            <div class="font-bold text-base">数据为空，请先上传或添加文件</div>
+            <div class="font-bold text-base">这里暂时没东西哦！</div>
           </div>
         </template>
 
