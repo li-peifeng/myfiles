@@ -22,42 +22,10 @@
 
 				<div class="zfile-index-setting-drawer-group">
 					<div class="zfile-index-setting-drawer-title">视图</div>
-					<div class="zfile-index-setting-drawer-blockCheckbox">
-						<el-tooltip
-							effect="dark"
-							content="列表模式"
-							placement="bottom">
-							<div class="zfile-index-setting-drawer-item current">
-								<SvgIcon name="table-layout"></SvgIcon>
-							</div>
-						</el-tooltip>
-						<el-tooltip
-							effect="dark"
-							content="图标模式（暂未实现）"
-							placement="bottom">
-							<div class="zfile-index-setting-drawer-item">
-								<SvgIcon name="card-layout"></SvgIcon>
-							</div>
-						</el-tooltip>
-					</div>
 					<div class="px-2.5">
 						<el-slider size="large" :show-tooltip="false" :marks="marks" v-model="zfileSettingCache.view.size" :step="1" :min="1" :max="3" show-stops />
 					</div>
 				</div>
-
-				<!--<div class="zfile-index-setting-drawer-group">-->
-				<!--	<div class="zfile-index-setting-drawer-title">信息</div>-->
-				<!--	<div class="zfile-index-setting-drawer-blockCheckbox">-->
-				<!--		<el-tooltip-->
-				<!--			effect="dark"-->
-				<!--			content="显示文件信息（暂未实现）"-->
-				<!--			placement="bottom">-->
-				<!--			<div class="zfile-index-setting-drawer-item current">-->
-				<!--				<SvgIcon name="info"></SvgIcon>-->
-				<!--			</div>-->
-				<!--		</el-tooltip>-->
-				<!--	</div>-->
-				<!--</div>-->
 
 				<div class="zfile-index-setting-drawer-group">
 					<div class="zfile-index-setting-drawer-title">画廊</div>
@@ -104,9 +72,6 @@
             <div class="text-lg font-medium">回到顶部按钮</div>
             <el-switch v-model="zfileSettingCache.gallery.showBackTop"></el-switch>
           </div>
-				</div>
-				<div class="text-gray-400 text-sm mt-10">
-					Tips: 设置会自动保存，刷新后仍有效.
 				</div>
 			</div>
 		</el-drawer>
