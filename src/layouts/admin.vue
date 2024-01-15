@@ -18,24 +18,8 @@
             :disabled="githubLatestLoading"
             trigger="hover">
             <div v-if="githubLatestInfo?.data" class="zfile-admin-index-version-info text-center">
-              <div v-html="`当前版本：v${common.version}`"></div>
-              <div v-html="`最新版：v${githubLatestInfo.data.tag_name}`"></div>
-              <div v-html="`发布时间: ${common.dateFormat(githubLatestInfo.data.published_at)}`"></div>
-              <br>
-              文档地址：
-              <el-link href="http://docs.zhaojun.im/zfile" target="_blank"
-                       class="zfile-word-aux zfile-margin-left-unset">点击进入
-              </el-link>
-              <br>
-              后端源码地址：
-              <el-link href="https://github.com/zhaojun1998/zfile" target="_blank"
-                       class="zfile-word-aux zfile-margin-left-unset">点击进入
-              </el-link>
-              <br>
-              前端源码地址：
-              <el-link href="https://github.com/zhaojun1998/zfile-vue" target="_blank"
-                       class="zfile-word-aux zfile-margin-left-unset">点击进入
-              </el-link>
+              <div v-html="`您的版本：v${common.version}`"></div>
+              <div v-html="`最新版本：v${githubLatestInfo.data.tag_name}`"></div>
             </div>
 
             <template #reference>
@@ -138,20 +122,6 @@
                         leave-to-class="transform opacity-0 scale-95">
               <MenuItems
                 class="z-10 origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
-                <div class="cursor-pointer border-b">
-                  <MenuItem @click="common.openPage('https://docs.zfile.vip')" v-slot="{ active }">
-                    <div
-                      :class="[active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700']">
-                      ZFile Docs
-                    </div>
-                  </MenuItem>
-                  <MenuItem @click="common.openPage('https://github.com/zhaojun1998/zfile')" v-slot="{ active }">
-                    <div
-                      :class="[active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700']">
-                      ZFile Github
-                    </div>
-                  </MenuItem>
-                </div>
                 <MenuItem v-slot="{ active }">
                   <router-link to="/admin/security-setting"
                                :class="[active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700']">
