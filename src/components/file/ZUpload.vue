@@ -17,12 +17,12 @@
 				</el-icon>
 				<div class="el-upload__text text-gray-400">
           <span v-show="uploadMode === 'file'">
-            拖拽文件到这里或<em> 点击上传</em>, 上传至 <em>{{ currentPath }}</em>
+            拖拽文件到这里或点击上传
           </span>
           <span v-show="uploadMode === 'folder'">
-            点击选择文件夹上传, 上传至 <em>{{ currentPath }}</em>
+            点击选择文件夹上传
             <br>
-            <span class="text-gray-400">（此处不支持拖拽文件夹，只支持点击选择文件夹）</span>
+            <span class="text-gray-400">（文件夹不支持拖拽，点击选择文件夹）</span>
           </span>
 				</div>
 			</el-upload>
@@ -77,7 +77,7 @@
 		<!-- 文件拖拽提示框-->
 		<div ref="dropBoxRef" id="dropBox" class="drop-view" v-if="storageConfigStore.permission.upload" v-show="dropState">
 			<div class="drop-sub">
-				<span>上传文件至 {{ currentPath }}</span>
+				<span>上传</span>
 			</div>
 		</div>
 	</div>
