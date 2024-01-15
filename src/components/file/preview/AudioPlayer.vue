@@ -4,7 +4,7 @@
 
 <script setup>
 import APlayer from "aplayer"; // 引入音乐插件
-import "aplayer/dist/APlayer.min.css";
+import "aplayer/dist/APlayer.min.css"; // 修改Aplayer大小写
 
 import useFileDataStore from "~/stores/file-data";
 
