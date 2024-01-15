@@ -1,5 +1,5 @@
 {
-	"baseUrl": "http://127.0.0.1:8080/",
+	"baseUrl": "",
 	"router": {
 		"mode": "history"
 	},
@@ -9,7 +9,7 @@
 		"size": 20
 	},
 	"gallery": {
-		"mobileColumn": 1,
+		"mobileColumn": 2,
 		"column": 3,
 		"columnSpacing": 50,
 		"rowSpacing": 10,
