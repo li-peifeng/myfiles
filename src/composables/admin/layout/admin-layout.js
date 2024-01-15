@@ -57,7 +57,7 @@ export default function useAdminLayout(router, route) {
             return;
         }
         // 获取当前选中的左侧导航的文字, 作为标题
-        document.title = (route.meta.name || 'ZFile') + ' | 后台管理';
+        document.title = (route.meta.name || 'LEO') + ' | 后台管理';
     }
 
     return {
