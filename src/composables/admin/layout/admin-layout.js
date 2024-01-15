@@ -32,7 +32,7 @@ export default function useAdminLayout(router, route) {
         });
         downloadLogReq().then((res) => {
             const { data, headers } = res;
-            const fileName = `ZFile 诊断日志 - ${dayjs().format('YYYY-MM-DD HH:mm:ss')}.zip`;
+            const fileName = `FILES 诊断日志 - ${dayjs().format('YYYY-MM-DD HH:mm:ss')}.zip`;
             // 此处当返回json文件时需要先对data进行JSON.stringify处理，其他类型文件不用做处理
             //const blob = new Blob([JSON.stringify(data)], ...)
             const blob = new Blob([data], {type: headers['content-type']})
@@ -57,7 +57,7 @@ export default function useAdminLayout(router, route) {
             return;
         }
         // 获取当前选中的左侧导航的文字, 作为标题
-        document.title = (route.meta.name || 'LEO') + ' | 后台管理';
+        document.title = (route.meta.name || 'ZFile') + ' | 后台管理';
     }
 
     return {
