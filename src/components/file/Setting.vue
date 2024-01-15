@@ -29,7 +29,6 @@
 
 				<div class="zfile-index-setting-drawer-group">
 					<div class="zfile-index-setting-drawer-title">画廊</div>
-					<div class="text-gray-400 text-sm">如已处于画廊模式，需重新启用画廊模式生效.</div>
 					<div class="flex justify-between">
 						<div class="text-lg font-medium">图片列数</div>
 						<el-input-number v-model="zfileSettingCache.gallery.column" :min="1"></el-input-number>
@@ -41,14 +40,6 @@
 					<div class="flex justify-between">
 						<div class="text-lg font-medium">行间距</div>
 						<el-input-number v-model="zfileSettingCache.gallery.rowSpacing" :min="0"></el-input-number>
-					</div>
-					<div class="flex justify-between">
-						<div class="text-lg font-medium">图片圆角</div>
-						<el-switch v-model="zfileSettingCache.gallery.roundedBorder"></el-switch>
-					</div>
-					<div class="flex justify-between">
-						<div class="text-lg font-medium">显示名称</div>
-						<el-switch v-model="zfileSettingCache.gallery.showInfo"></el-switch>
 					</div>
 					<div class="flex justify-between">
 						<div class="text-lg font-medium">名称显示</div>
@@ -63,6 +54,14 @@
 							<el-option label="显示全部" value="full"></el-option>
 							<el-option label="显示单张" value="only"></el-option>
 						</el-select>
+					</div>
+					<div class="flex justify-between">
+						<div class="text-lg font-medium">图片圆角</div>
+						<el-switch v-model="zfileSettingCache.gallery.roundedBorder"></el-switch>
+					</div>
+					<div class="flex justify-between">
+						<div class="text-lg font-medium">显示名称</div>
+						<el-switch v-model="zfileSettingCache.gallery.showInfo"></el-switch>
 					</div>
           <div class="flex justify-between">
             <div class="text-lg font-medium">点击预览</div>
