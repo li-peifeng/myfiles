@@ -81,9 +81,6 @@
 				</el-tooltip>
 			</div>
 		</div>
-		<div class="zfile-video-tools-tips" :class="hiddenTools ? 'hidden-important' : ''">
-			tips: 可点击上方的软件图标进行下载播放, 本地播放器解码效果更佳.
-		</div>
 	</div>
 </template>
 
