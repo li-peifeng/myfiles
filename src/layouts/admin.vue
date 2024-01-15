@@ -18,7 +18,7 @@
             :disabled="githubLatestLoading"
             trigger="hover">
             <div v-if="githubLatestInfo?.data" class="zfile-admin-index-version-info text-center">
-              <div v-html="`您的版本：v${common.version}`"></div>
+              <div v-html="`当前版本：v${common.version}`"></div>
               <div v-html="`最新版本：v${githubLatestInfo.data.tag_name}`"></div>
             </div>
 
