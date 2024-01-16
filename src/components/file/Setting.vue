@@ -30,15 +30,15 @@
 				<div class="zfile-index-setting-drawer-group">
 					<div class="zfile-index-setting-drawer-title">画廊</div>
 					<div class="flex justify-between">
-						<div class="text-lg font-medium">图片列数</div>
+						<div class="text-lg font-medium">列数</div>
 						<el-input-number v-model="zfileSettingCache.gallery.column" :min="1"></el-input-number>
 					</div>
 					<div class="flex justify-between">
-						<div class="text-lg font-medium">列间距</div>
+						<div class="text-lg font-medium">列距</div>
 						<el-input-number v-model="zfileSettingCache.gallery.columnSpacing" :min="0"></el-input-number>
 					</div>
 					<div class="flex justify-between">
-						<div class="text-lg font-medium">行间距</div>
+						<div class="text-lg font-medium">行距</div>
 						<el-input-number v-model="zfileSettingCache.gallery.rowSpacing" :min="0"></el-input-number>
 					</div>
 					<div class="flex justify-between">
